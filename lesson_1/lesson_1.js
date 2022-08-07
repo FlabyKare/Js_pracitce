@@ -9,7 +9,6 @@ const array_img = [
     'https://avatars.mds.yandex.net/i?id=58991ca995de3a6e86c0cd2b4dda4203-5524622-images-thumbs&n=13',
 
 ];
-
 let massive = `
 <div  class="f_row">
     <img src="${array_img[0]}" width="100px" height="100px">    
@@ -18,16 +17,6 @@ let massive = `
     <img src="${array_img[3]}" width="100px" height="100px">   
 </div>
 `
-// array_img.forEach(photo => {
-//     massive += `
-//     <div  class="f_row">
-//         <img src="${photo}" width="100px" height="100px">    
-//     </div>
-// `
-// });
-// block_add.innerHTML += massive
-
-
 btn.addEventListener('click', () => {
     block_add.innerHTML += massive
     // block_add.innerHTML += massive
