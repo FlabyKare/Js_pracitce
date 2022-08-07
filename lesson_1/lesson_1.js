@@ -10,25 +10,25 @@ const array_img = [
 
 ];
 
-let massive = "";
-
-
-
+let massive = `
+<div  class="f_row">
+    <img src="${array_img[0]}" width="100px" height="100px">    
+    <img src="${array_img[1]}" width="100px" height="100px">   
+    <img src="${array_img[2]}" width="100px" height="100px">   
+    <img src="${array_img[3]}" width="100px" height="100px">   
+</div>
+`
+// array_img.forEach(photo => {
+//     massive += `
+//     <div  class="f_row">
+//         <img src="${photo}" width="100px" height="100px">    
+//     </div>
+// `
+// });
+// block_add.innerHTML += massive
 
 
 btn.addEventListener('click', () => {
-    array_img.forEach(photo => {
-        block_add.innerHTML += `
-        <div  class="f_row">
-            <img src="${photo}" width="100px" height="100px">    
-
-        </div>
-    `
-        // massive +=
-    });
-
-if (block_add.length != 0){
-    console.log(block_add.length)
-}
-
+    block_add.innerHTML += massive
+    // block_add.innerHTML += massive
 })
