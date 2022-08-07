@@ -1,0 +1,66 @@
+body{
+    background: -webkit-linear-gradient(90deg, #4e287a,#47439a,#345db8);
+    background: linear-gradient(90deg, #4e287a,#47439a,#345db8);
+    font-family: sans-serif;
+}
+.body_account{
+    background: #345db8;
+    font-family: sans-serif;
+}
+.signIn_wrapper {
+    width: 100%;
+    padding: 16% 0;
+}
+.form_container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 0 20%;
+        input{
+            outline: none;
+            border: none;
+            padding: 20px;
+            transition: .5s;
+            font-size: 25px;
+            text-align: center;
+            &:focus{
+                border: 2px solid gold;
+                box-shadow: -1px 1px 14px 5px gold;
+                transition: .0s;
+                &::placeholder{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+.name {
+}
+.pass {
+}
+.btn {
+    font-size: 25px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    background: gold;
+    letter-spacing: 1px;
+    transition: .5s;
+    &:hover{
+        background: rgb(181, 154, 2);
+    }
+}
+
+@media(max-width:575.98px){
+    form{
+        padding: 0 2% !important;
+    }
+    .signIn_wrapper {
+        padding: 50% 0;
+    }
+}
